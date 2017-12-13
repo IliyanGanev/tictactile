@@ -2,6 +2,7 @@ get '/' do
   erb :'index'
 end
 
-get '/studio' do
-  erb :'studio'
+get '/amphibians' do
+  erb :'amphibians'
 end
+
