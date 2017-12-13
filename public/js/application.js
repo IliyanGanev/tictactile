@@ -1,7 +1,25 @@
-$(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+$(document).ready(function(){
+	$("#MenuIcon").click(function(){
+		console.log("asdf")
+		$("#MainMenu").css("left","0px");
+		function showMenu(){
+			$("#MainMenu").css("-webkit-clip-path","polygon(0 0,100% 0,100% 100%,0% 100%)");
+			$("#MenuIcon").animate({right:'-100'},300);
+		}
+		setTimeout(showMenu,100);
+	});
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+	$("#close").click(function(){
+		$("#MainMenu").css("-webkit-clip-path","polygon(0 0,0% 0,100% 100%,0% 100%)");
+		function hideMenu(){
+			$("#MainMenu").css("left","-300px");
+			$("#MenuIcon").animate({right:'50'},300);
+		}
+		setTimeout(hideMenu, 300);
+
+		function originallayout(){
+			$("#MainMenu").css("-webkit-clip-path","polygon(0 0,100% 0,0% 100%,0% 100%)");
+		}
+		setTimeout(originallayout, 600);
+	});
 });

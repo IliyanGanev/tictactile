@@ -5,43 +5,57 @@
   <!--
     application.css is where you put your styles
   -->
+
   <link rel="stylesheet" href="/css/application.css">
+  
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
-
-
+  
   <link href='https://fonts.googleapis.com/css?family=Raleway|Roboto' rel='stylesheet' type='text/css'>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="/js/application.js"></script>
 
+  
   <title></title>
 </head>
 
-
-<header>
-    <a href="/"><h1 class="logo"><mark class='marklogo'>Ma</mark>rgarita ganeva</h1></a>
-
-     <div class='right-menu'>
+      <div id="box1">
       
-        <a class="right-menu-button" href="architecture">Architecture</a>
-        <a class="right-menu-button" href="studio">Studio</a> 
-        <a class="right-menu-button" href="digital">Digital</a>
-        <a class="right-menu-button" href="photo">Photo</a>
-        <a class="right-menu-button" href="sketches">Sketches</a>
-        <a class="right-menu-button" href="video">Video</a>
-        <a class="right-menu-button" href="instalations">Instalations</a>
-    
-    </div>
+        <div id="MenuIcon">
+          <div id="MenuLine"></div>
+        </div>
 
-  </header>
+        <div id="MainMenu">
+          <div id="logo">
+            <img src="img/logo.png" height="75px" width="75px"/>
+          </div>
+          <ul>
+            <li>Home<div class="line"></div></li>
+            <li>windows<div class="line"></div></li>
+            <li>doors<div class="line"></div></li>
+            <li>furniture<div class="line"></div></li>
+            <li>whatever<div class="line"></div></li>
+            <li>about<div class="line"></div></li>
+          </ul>
+          <div id="close">
+            <img src="img/Close.png" height="30px" width="30px"/>
+          </div>  
+        </div>
+
+
+      <h1>PASSIVE HOUSE</h1>
+      </div>
+
+
   
 
 <body>
+
   <%= yield %>
-</body>
+
+</body> 
 </html>
