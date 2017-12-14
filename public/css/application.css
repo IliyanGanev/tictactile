@@ -55,6 +55,16 @@ body{
   background-attachment: fixed;
 
 }
+
+#box7{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
 h1{
   
   font-size: 50px;
@@ -94,7 +104,7 @@ border: 1px solid white ;
 #MenuLine{
   height: 4px;
   width: 50px;
-  background-color: #1fcaa7;
+  background-color: #19d677;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -108,7 +118,7 @@ border: 1px solid white ;
   content: '';
   height: 4px;
   width: 40px;
-  background-color: #1fcaa7;
+  background-color: #19d677;
   position: absolute;
   margin-top: 10px;
   transition: all .3s;
@@ -120,7 +130,7 @@ border: 1px solid white ;
   content: '';
   height: 4px;
   width: 40px;
-  background-color: #1fcaa7;
+  background-color: #19d677;
   position: absolute;
   margin-top: -10px;
   transition: all .3s;
@@ -187,7 +197,7 @@ ul li:hover .line{
   bottom: 15%;
   left: 50%;
   transform: translate(-50%);
-  color:#1fcaa7;
+  color:#19d677;
 }
 #close:hover{
   cursor: pointer;
@@ -197,16 +207,28 @@ a {
   text-decoration: none;
    font-family: arial;
   color: #1fcaa7;
+  letter-spacing: .10em;
 }
 
 .button.special {
+  border: 1px solid #19d677;
   border-radius: 2px;
- font-size: 1.3em;
- padding: 5px;
- padding-left: 20px; 
- padding-right: 20px;
-    background-color: #1fcaa7;
-    box-shadow: none !important;
-    color: #ffffff !important;
+  font-size: 1.3em;
+  padding: 10px 20px; 
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .60em;
+  font-size: 13px; 
+}
+
+.button.special:hover {
+  
+  font-size: 1.3em;
+  padding: 10px 20px; 
+  text-transform: uppercase;
+  color: #fff;
+  background: #19d677;
+  letter-spacing: .60em;
+  font-size: 13px; 
 }
 
