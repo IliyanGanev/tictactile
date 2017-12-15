@@ -18,4 +18,6 @@ get '/digital' do
   erb :'digital'
 end
 
-
+get '/three' do
+  erb :'three'
+end

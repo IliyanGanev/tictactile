@@ -1,8 +1,41 @@
-<div id="box1">
-      
-        <h1>marganeva</h1>
+<div id="MenuIcon">
+	<div id="MenuLine"></div>
+</div>
 
-    
+
+<div id="MainMenu">
+	<div id="logo">
+		<h4><a href="/"><div class="a">m</div>argarita<div class="a">g</div>aneva</a></h4>
+
+	</div>
+	<ul>
+
+		<li><a href="/#box2">architecture</a><div class="line"></div></li>
+		<li><a href="/#box3">installations</a><div class="line"></div></li>
+		<li><a href="#box4">digital</a><div class="line"></div></li>
+		<li><a href="#box5">sketches</a><div class="line"></div></li>
+		<li><a href="#box6">video</a><div class="line"></div></li>
+		<li><a href="#box7">about</a><div class="line"></div></li>
+
+	</ul>
+	<div id="close">
+		<!-- <img src="img/Close.png" height="30px" width="30px"/> -->
+		<a class="button special">close</a>
+	</div>  
+</div>
+
+
+
+<div id="box1">
+
+	<h1>marganeva</h1>
+
+	<div class="image">
+		<iframe src="three" width="200%" height="800" scrolling="no">
+			<p>Your browser does not support iframes.</p>
+		</iframe>
+	</div>
+
 </div>
 
 <div id="box2">
@@ -12,10 +45,10 @@
 	<div class="w3-row-padding">
 
 		<% (-13..-1).each do |n| %>
-			<div class="w3-container w3-third">
-				<img style="height:15em; width:15em; padding: 2em;"  src="img/Arch/<%=n%>.jpg" style="width:100%;cursor:pointer" 
-				onclick="onClick(this)" class="w3-hover-opacity">
-			</div>
+		<div class="w3-container w3-third">
+			<img style="height:15em; width:15em; padding: 2em;"  src="img/Arch/<%=n%>.jpg" style="width:100%;cursor:pointer" 
+			onclick="onClick(this)" class="w3-hover-opacity">
+		</div>
 
 		<%end%>
 
@@ -34,11 +67,11 @@
 
 <div id="box3">
 	<div class="w3-row-padding">
-	<h2 style="color: white;">installations</h2>
-	<a href="equil"><img src="img/Install/Equil 2007.gif"></a>
-	<a href="bodyscapes"><img src="img/Install/bodyscapes 2005.jpg"></a>
-	<a href="amphibians"><img src="img/Install/amphibians 2002.jpg"></a>
-</div>
+		<h2 style="color: white;">installations</h2>
+		<a href="equil"><img src="img/Install/Equil 2007.gif"></a>
+		<a href="bodyscapes"><img src="img/Install/bodyscapes 2005.jpg"></a>
+		<a href="amphibians"><img src="img/Install/amphibians 2002.jpg"></a>
+	</div>
 </div>
 
 
@@ -49,48 +82,48 @@
 	<h2>digital</h2>
 
 	<div class="w3-row-padding">
-	<% (-22..-1).each do |n| %>
+		<% (-22..-1).each do |n| %>
 		<div class="w3-container w3-third">
 			<img style="height:15em; width:15em; padding: 2em;" src="img/Digital art/<%=n%>.jpg" style="width:100%;cursor:pointer" 
 			onclick="onClick(this)" class="w3-hover-opacity">
 		</div>
-	<%end%>
-	<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-		<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;<span>
-		<div class="w3-modal-content w3-animate-zoom">
-			<img id="img01" style="width:100%">
+		<%end%>
+		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+			<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;<span>
+				<div class="w3-modal-content w3-animate-zoom">
+					<img id="img01" style="width:100%">
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
 
 
 
-<div id="box5">
+		<div id="box5">
 
-	<h2 style="color: white;">sketches</h2>
+			<h2 style="color: white;">sketches</h2>
 
-	<div class="w3-row-padding">
-	<% (-10..-1).each do |n| %>
-		<div class="w3-container w3-third">
-			<img style="height:15em; width:15em; padding: 2em;" src="img/Art/<%=n%>.jpg" style="width:100%;cursor:pointer" 
-			onclick="onClick(this)" class="w3-hover-opacity">
-		</div>
-	<%end%>
-	<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-		<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;<span>
-		<div class="w3-modal-content w3-animate-zoom">
-			<img id="img01" style="width:100%">
-		</div>
-	</div>
-</div>
+			<div class="w3-row-padding">
+				<% (-10..-1).each do |n| %>
+				<div class="w3-container w3-third">
+					<img style="height:15em; width:15em; padding: 2em;" src="img/Art/<%=n%>.jpg" style="width:100%;cursor:pointer" 
+					onclick="onClick(this)" class="w3-hover-opacity">
+				</div>
+				<%end%>
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;<span>
+						<div class="w3-modal-content w3-animate-zoom">
+							<img id="img01" style="width:100%">
+						</div>
+					</div>
+				</div>
 
 
-<div id="box6">
-	<div class="w3-row-padding">
-<h3>videos</h3>
-</div>
+				<div id="box6">
+					<div class="w3-row-padding">
+						<h3>videos</h3>
+					</div>
 
-<div id="box7">
-	<div class="w3-row-padding">
-<h3>about</h3>
-</div>
+					<div id="box7">
+						<div class="w3-row-padding">
+							<h3>about</h3>
+						</div>
