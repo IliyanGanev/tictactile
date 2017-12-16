@@ -1,3 +1,7 @@
+html { 
+  height: 100%; 
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -12,9 +16,12 @@ body{
   background-attachment: fixed;
 }
 #box2{
-  height: 170vh;
+  height: 100vh;
+  min-height:100%;
+  position: relative;
+   background-repeat: no-repeat
   width: 100%;
-  background-image: url("/img/bgrnd/lattice1-bgr-wh.jpg");
+  background-image: url("/img/bgrnd/lattic5-bgrnd.jpg");
   background-size: cover;
   background-attachment: fixed;
 
@@ -44,6 +51,7 @@ body{
    background-image: url("/img/i3.jpg");
   background-size: cover;
   background-attachment: fixed;
+
 
 }
 #box6{
@@ -95,6 +103,8 @@ border: 1px solid white ;
   position: fixed;
   top:2em;
   right:2em;
+  margin-left: 1em;
+    z-index: 1;
 }
 
 #MenuIcon:hover{
@@ -150,6 +160,8 @@ border: 1px solid white ;
   left: -300px;
   transition: all .5s ease-in-out;
   opacity:0.8;
+    z-index: 1;
+
 }
 ul{
   list-style: none;
@@ -239,3 +251,21 @@ iframe {
     font: inherit;
     vertical-align: baseline;
 }
+
+
+.wrapper{
+  text-align: center;
+  position: relative;
+  width: 75%;
+  min-height: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+ background:rgba(0, 0, 0, 0.2);
+ margin-right: 5em;
+
+
+}
+
+.icon{
+  display: inline-block;
+  margin-top: 2em;
