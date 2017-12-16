@@ -28,7 +28,7 @@
 
 <div id="box1">
 
-<!-- 	<h1>marganeva</h1> -->
+	<!-- 	<h1>marganeva</h1> -->
 
 	<div class="image">
 		<iframe src="three" width="150%" height="100%" scrolling="no">
@@ -40,92 +40,99 @@
 
 <div id="box2">
 
-	<div class="wrapper"
-
-		<div class="w3-row-padding">
-			<% (-13..-1).each do |n| %>
-			<div class="w3-container w3-quarter">
-				<div class='icon'>
-					<img style="height:10em; width:10em;" src="img/Arch/<%=n%>.jpg" style="cursor:pointer" 
-					onclick="onClick(this)" class="w3-hover-opacity">
-				</div>
+	<div class="wrapper">
+		<h2 style="color: white;">architecture</h2>
+		<% (-13..-1).each do |n| %>	
+		<div class='icon'>
+			<img style="height:11em; width:11em;" src="img/Arch/<%=n%>.jpg" style="cursor:pointer" 
+			onclick="onClick(this)" class="w3-hover-opacity">
+		</div>		
+		<%end%>
+		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+			<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+			<div class="w3-modal-content w3-animate-zoom">
+				<img id="img01" style="width:100%">
 			</div>
-
-			<%end%>
-
-
-			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-				<div class="w3-modal-content w3-animate-zoom">
-					<img id="img01" style="width:100%">
-				</div>
-			</div>
-
 		</div>
 	</div>
 </div>
 
 
 
+
 <div id="box3">
-	<div class="w3-row-padding">
+	<div class="wrapper">
 		<h2 style="color: white;">installations</h2>
-		<a href="equil"><img style="height:10em; width:10em;" src="img/Install/Equil 2007.gif" style="width:100%;cursor:pointer"></a>
-		<a href="bodyscapes"><img style="height:10em; width:10em;" src="img/Install/bodyscapes 2005.jpg" style="width:100%;cursor:pointer"></a>
-		<a href="amphibians"><img style="height:10em; width:10em;" src="img/Install/amphibians 2002.jpg" style="width:100%;cursor:pointer"></a>
+		<div class='icon'>
+			<a href="equil"><img style="height:11em; width:11em;" src="img/Install/Equil 2007.gif" style="cursor:pointer"></a>
+		</div>
+		<div class='icon'>
+			<a href="bodyscapes"><img style="height:10em; width:10em;" src="img/Install/bodyscapes 2005.jpg" style="cursor:pointer"></a>
+		</div>
+		<div class='icon'>
+			<a href="amphibians"><img style="height:10em; width:10em;" src="img/Install/amphibians 2002.jpg" style="cursor:pointer"></a>
+			<div class='icon'>
+			</div>
+		</div>
 	</div>
 </div>
+
 
 
 
 
 <div id="box4">
-
-	<h2>digital</h2>
-
-	<div class="w3-row-padding">
-		<% (-22..-1).each do |n| %>
-		<div class="w3-container w3-quarter">
-			<img style="height:10em; width:10em; padding: 2em;" src="img/Digital art/<%=n%>.jpg" style="width:100%;cursor:pointer" 
+	<div class="wrapper">
+		<h2 style="color: white;">digital</h2>
+		<% (-22..-1).each do |n| %>	
+		<div class='icon'>
+			<img style="height:11em; width:11em;" src="img/Digital art/<%=n%>.jpg" style="cursor:pointer" 
 			onclick="onClick(this)" class="w3-hover-opacity">
-		</div>
+		</div>	
 		<%end%>
 		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-			<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;<span>
-				<div class="w3-modal-content w3-animate-zoom">
-					<img id="img01" style="width:100%">
-				</div>
+			<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+			<div class="w3-modal-content w3-animate-zoom">
+				<img id="img01" style="width:100%">
 			</div>
 		</div>
+	</div>
+</div>
 
 
 
-		<div id="box5">
 
-			<h2 style="color: white;">sketches</h2>
+<div id="box5">
+	<div class="wrapper">
+		<h2 style="color: white;">sketches</h2>
+		<% (-10..-1).each do |n| %>
+		<div class="icon">
+			<img style="height:10em; width:10em;" src="img/Art/<%=n%>.jpg" style="cursor:pointer" 
+			onclick="onClick(this)" class="w3-hover-opacity">
+		</div>	
+		<%end%>
+		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+			<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+			<div class="w3-modal-content w3-animate-zoom">
+				<img id="img01" style="width:100%">
+			</div>
+		</div>
+	</div>
+</div>
 
-			<div class="w3-row-padding">
-				<% (-10..-1).each do |n| %>
-				<div class="w3-container w3-quarter">
-					<img style="height:10em; width:10em; padding: 2em;" src="img/Art/<%=n%>.jpg" style="width:100%;cursor:pointer" 
-					onclick="onClick(this)" class="w3-hover-opacity">
-				</div>
-				<%end%>
-				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;<span>
-						<div class="w3-modal-content w3-animate-zoom">
-							<img id="img01" style="width:100%">
-						</div>
-					</div>
-				</div>
 
 
-				<div id="box6">
-					<div class="w3-row-padding">
-						<h3>videos</h3>
-					</div>
 
-					<div id="box7">
-						<div class="w3-row-padding">
-							<h3>about</h3>
-						</div>
+
+
+<div id="box6">
+	<div class="w3-row-padding">
+		<h3>videos</h3>
+	</div>
+</div>
+
+<div id="box7">
+	<div class="w3-row-padding">
+		<h3>about</h3>
+	</div>
+</div>
