@@ -1,10 +1,37 @@
-bodyscapes.erb
 
-<div class="w3-row-padding">
+<div id="MenuIcon">
+	<div id="MenuLine"></div>
+</div>
 
+
+<div id="MainMenu">
+	<div id="logo">
+		<h4><a href="/"><div class="a">m</div>argarita<div class="a">g</div>aneva</a></h4>
+
+	</div>
+	<ul>
+
+		<li><a href="/#box2">architecture</a><div class="line"></div></li>
+		<li><a href="/#box3">installations</a><div class="line"></div></li>
+		<li><a href="#box4">digital</a><div class="line"></div></li>
+		<li><a href="#box5">sketches</a><div class="line"></div></li>
+		<li><a href="#box6">video</a><div class="line"></div></li>
+		<li><a href="#box7">about</a><div class="line"></div></li>
+
+	</ul>
+	<div id="close">
+		<!-- <img src="img/Close.png" height="30px" width="30px"/> -->
+		<a class="button special">close</a>
+	</div>  
+</div>
+
+
+
+<div class="wrapper">
+	<p>body</p>
 		<% (1..4).each do |n| %>
-			<div class="w3-container w3-third">
-				<img  src="img/Install/bodyscapes 2005/<%=n%>.jpg" style="width:100%;cursor:pointer" 
+			<div class="icon">
+				<img style="height:10em; width:10em;"  src="img/Install/bodyscapes 2005/<%=n%>.jpg" style="width:100%;cursor:pointer" 
 				onclick="onClick(this)" class="w3-hover-opacity">
 			</div>
 

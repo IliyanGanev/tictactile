@@ -247,8 +247,7 @@ iframe {
   margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+   
     vertical-align: baseline;
 }
 
@@ -260,7 +259,9 @@ iframe {
   min-height: 100%;
   max-width: 90%;
   margin: 0 auto;
- background:rgba(0, 0, 0, 0.0);
+ background:rgba(0, 0, 0, 0.2);
+
+
  margin-right: 6em;
  margin-top: -1em;
 
@@ -269,7 +270,8 @@ iframe {
 
 .icon{
   display: inline-block;
-  margin: 2em;
+  margin: 3em;
+  margin-top: 1em;
 
 }
 

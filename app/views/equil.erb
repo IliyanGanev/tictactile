@@ -1,42 +1,71 @@
-equil.erb
+<div id="MenuIcon">
+	<div id="MenuLine"></div>
+</div>
 
 
-<div class="w3-row-padding">
-
-		<% (1..5).each do |n| %>
-			<div class="w3-container w3-third">
-				<img src="img/Install/EQUILIBerrATIONS 2007/<%=n%>.jpg" style="width:100%;cursor:pointer" 
-				onclick="onClick(this)" class="w3-hover-opacity">
-			</div>
-
-		<%end%>
-
-
-		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-			<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-			<div class="w3-modal-content w3-animate-zoom">
-				<img id="img01" style="width:100%">
-			</div>
-		</div>
+<div id="MainMenu">
+	<div id="logo">
+		<h4><a href="/"><div class="a">m</div>argarita<div class="a">g</div>aneva</a></h4>
 
 	</div>
+	<ul>
+
+		<li><a href="/#box2">architecture</a><div class="line"></div></li>
+		<li><a href="/#box3">installations</a><div class="line"></div></li>
+		<li><a href="#box4">digital</a><div class="line"></div></li>
+		<li><a href="#box5">sketches</a><div class="line"></div></li>
+		<li><a href="#box6">video</a><div class="line"></div></li>
+		<li><a href="#box7">about</a><div class="line"></div></li>
+
+	</ul>
+	<div id="close">
+		<!-- <img src="img/Close.png" height="30px" width="30px"/> -->
+		<a class="button special">close</a>
+	</div>  
+</div>
+
+
+				<video id="img01" style="width:100%" controls>
+					<source src="img/Install/EQUILIBerrATIONS 2007/2.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+				</video>
+
+
+
+
+<div class="wrapper">
+	<p>equilibrium</p>
+	<% (1..5).each do |n| %>
+	<div class="icon">
+		<img src="img/Install/EQUILIBerrATIONS 2007/<%=n%>.jpg" style="width:100%;cursor:pointer" 
+		onclick="onClick(this)" class="w3-hover-opacity">
+	</div>
+
+	<%end%>
+
+</div>
+
+
 
 
 
 	<div class="w3-row-padding">
 
-	
-			<div class="w3-container w3-third">
-				<img style="height:10em; width:10em; padding: 2em;" src="img/Install/EQUILIBerrATIONS 2007/1-BAD.mp4" style="width:100%;cursor:pointer" 
-				onclick="onClick(this)" class="w3-hover-opacity">
-			</div>		
+
+		<div class="w3-container w3-third">
+			<video style="height:10em; width:10em; padding: 2em;" src="img/Install/EQUILIBerrATIONS 2007/2.mp4" style="width:100%;cursor:pointer" 
+			onclick="onClick(this)" class="w3-hover-opacity"></video>
+		</div>		
 
 
 		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
 			<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
 			<div class="w3-modal-content w3-animate-zoom">
-				<img id="img01" style="width:100%">
+				<video id="img01" style="width:100%" controls>
+					<source src="img/Install/EQUILIBerrATIONS 2007/1-BAD.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+				</video>
+				
 			</div>
 		</div>
-
 	</div>
