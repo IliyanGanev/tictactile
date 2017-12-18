@@ -9,9 +9,10 @@ gem 'sinatra-contrib'
 
 gem 'activesupport', '~>5.1.2'
 gem 'activerecord', '~>5.1.2'
+gem "rack"
 gem 'puma'
 
-gem 'rake'
+
 
 gem 'shotgun', '~>0.9.1'
 
@@ -26,5 +27,4 @@ group :test, :development do
   gem 'factory_girl'
   gem 'faker'
   gem 'pry-byebug'
- 
 end
