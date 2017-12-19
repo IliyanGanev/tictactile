@@ -1,5 +1,6 @@
 <div id="MenuIcon">
-	<div id="MenuLine"></div>
+	<div id="MenuLine">
+	</div>
 </div>
 
 
@@ -12,10 +13,10 @@
 
 		<li><a href="/#box2">architecture</a><div class="line"></div></li>
 		<li><a href="/#box3">installations</a><div class="line"></div></li>
-		<li><a href="#box4">digital</a><div class="line"></div></li>
-		<li><a href="#box5">sketches</a><div class="line"></div></li>
-		<li><a href="#box6">video</a><div class="line"></div></li>
-		<li><a href="#box7">about</a><div class="line"></div></li>
+		<li><a href="/#box4">digital</a><div class="line"></div></li>
+		<li><a href="/#box5">sketches</a><div class="line"></div></li>
+		<li><a href="/#box6">video</a><div class="line"></div></li>
+		<li><a href="/#box7">about</a><div class="line"></div></li>
 
 	</ul>
 	<div id="close">
@@ -42,9 +43,9 @@
 
 	<div class="wrapper">
 		<h2 style="color: white;">architecture</h2>
-		<% (-13..-1).each do |n| %>	
+		<% (-14..-1).each do |n| %>	
 		<div class='icon'>
-			<img style="width:10em;" src="img/Arch/<%=n%>.jpg" style="cursor:pointer" 
+			<img style="width:10em; cursor:pointer" src="img/Arch/<%=n%>.jpg"
 			onclick="onClick(this)" class="w3-hover-opacity">
 		</div>		
 		<%end%>
@@ -63,16 +64,19 @@
 <div id="box3">
 	<div class="wrapper">
 		<h2 style="color: white;">installations</h2>
-		<div class='icon'>
-			<a href="equil"><img style="height:8em; width:2em;" src="img/Install/Equil 2007.gif" style="cursor:pointer"></a>
-		</div>
-		<div class='icon'>
-			<a href="bodyscapes"><img style="height:8em;" src="img/Install/bodyscapes 2005.jpg" style="cursor:pointer"></a>
-		</div>
-		<div class='icon'>
-			<a href="amphibians"><img style="height:8em;" src="img/Install/amphibians 2002.jpg" style="cursor:pointer"></a>
+		
 			<div class='icon'>
+				<h3 class="name">EQUILIBerrATIONS 2007 </h3>
+				<a href="equil"><img style="height:8em;cursor:pointer" src="img/Install/Equil 2007.gif" ></a>
 			</div>
+
+		<div class='icon'>
+			<h3 class="name">BodyScapes 2006</h3>
+			<a href="bodyscapes"><img style="height:8em;cursor:pointer" src="img/Install/bodyscapes 2005.jpg" ></a>
+		</div>
+		<div class='icon'>
+			<h3 class="name">Amphibian S scape 2003</h3>
+			<a href="amphibians"><img style="height:8em;cursor:pointer" src="img/Install/amphibians 2002.jpg" ></a>
 		</div>
 	</div>
 </div>
@@ -107,7 +111,7 @@
 		<h2 style="color: white;">sketches</h2>
 		<% (-10..-1).each do |n| %>
 		<div class="icon">
-			<img style="width:10em;" src="img/Art/<%=n%>.jpg" style="cursor:pointer" 
+			<img style="width:10em; cursor:pointer" src="img/Art/<%=n%>.jpg"  
 			onclick="onClick(this)" class="w3-hover-opacity">
 		</div>	
 		<%end%>
