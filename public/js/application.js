@@ -73,8 +73,14 @@ $(document).ready(function(){
     });
 
 
-
-
+		$('.wrapper').find('.w3-modal').each(function(){
+			var id = $(this).attr('id');
+	
+			if(window.location.href.indexOf('#'+id) != -1) {
+    	$('#'+id).show();
+  	}
+		
+		});
 
 
 });
