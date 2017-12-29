@@ -54,10 +54,10 @@ $(document).ready(function(){
   //   	$("#businesscenter").show();
   // 	}
 
-  // 	if(window.location.href.indexOf('#parametricexperiment') != -1) {
+  	if(window.location.href.indexOf('modal0101') != -1) {
   	
-  //   	$("#parametricexperiment").show();
-  // 	}
+    	$("#modal0101").show();
+  	}
 
 
 
@@ -74,12 +74,19 @@ $(document).ready(function(){
    // open modals if their id is in the url
   $('.wrapper').find('.w3-modal').each(function(){
   	var id = $(this).attr('id');
-  	
+  	console.log('asdf')
   	if(window.location.href.indexOf(id) != -1) {
-  		console.log(id);
   		var url = window.location.href;
   		window.location = url.slice(0, url.indexOf('?'));
-  	
+  		$('#'+id).show();	
+  	}
+  });
+
+
+  	// open modals if their id is in the url for pages not included in the parallax
+  $('.equiwrapper, .amphiwrapper, .bodywrapper').find('.w3-modal').each(function(){
+  	var id = $(this).attr('id');
+  	if(window.location.href.indexOf(id) != -1) {
   		$('#'+id).show();
   	
   	}
@@ -87,7 +94,7 @@ $(document).ready(function(){
 
     //changes the url hash for the paralax page
    $(document).bind('scroll',function(e){
-   	$('section').each(function(){
+   	$('.section').each(function(){
    		if (
    			$(this).offset().top < window.pageYOffset + 10
 			//begins before top
