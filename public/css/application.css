@@ -206,7 +206,7 @@ ul li:hover .line{
   cursor: pointer;
 }
 
-a  {
+a {
   text-decoration: none;
   font-family: myFirstFont;
   color: #1fcaa7;
@@ -362,6 +362,7 @@ h2 {
 
 .amphibiantext {
   padding:6em;
+  padding-bottom: 1em;
 }
 
 .metaimage{
@@ -374,8 +375,20 @@ h2 {
   width: 100%;
 }
 
+.amphvid{
+  width:30em;
+}
+
+
 
 @media screen and (max-width: 800px) {
+.paramimg{
+  width: 100%;
+}
+  .amphvid{
+  width: 20em;
+}
+
  .equiicon2{
   padding-bottom: 0.5em;
  }
